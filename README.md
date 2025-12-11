@@ -7,7 +7,12 @@
 [![SCL180](https://img.shields.io/badge/SCL180-PDK-28A745?style=for-the-badge)]()  
 [![Phase](https://img.shields.io/badge/Phase-2-9B59B6?style=for-the-badge)]()
 
+
+
 **Exploring open-source silicon, one RTL module at a time.**
+
+
+<img width="1280" height="720" alt="main" src="https://github.com/user-attachments/assets/d4c8dff6-cfe9-4524-be8e-63fd8507e726" />
 
 </div>
 
@@ -71,7 +76,7 @@ The focus is on:
 📁 docs/                → Notes, logs, screenshots, reports  
 
 ```
-<img width="1280" height="720" alt="main" src="https://github.com/user-attachments/assets/d4c8dff6-cfe9-4524-be8e-63fd8507e726" />
+
 
 ## 🌟 Key Objectives
 
