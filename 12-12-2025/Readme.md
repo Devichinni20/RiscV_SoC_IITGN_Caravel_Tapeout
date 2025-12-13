@@ -52,12 +52,27 @@ Before using this repository, ensure you have the following dependencies install
    git checkout iitgn
    ```
 2. Install required dependencies (ensure dc_shell and SCL180 PDK are properly set up).
+<img width="1600" height="402" alt="image" src="https://github.com/user-attachments/assets/75217327-0dee-4aba-8389-0b7661a6a060" />
+
+
+
+
+
+
+
+
 
 ### Functional Simulation Setup
 3. Setup functional simulation file paths
    - Edit Makefile at this path [./dv/hkspi/Makefile](./dv/hkspi/Makefile)
    - Modify and verify `GCC_Path` to point to correct riscv installation
    - Modify and verify `scl_io_PATH` to point to correct io
+
+<img width="890" height="126" alt="image" src="https://github.com/user-attachments/assets/df64711f-898a-4946-b8ff-b537f8af1cee" />
+
+
+
+
   
 
 ## use the make file from RTL folder
@@ -71,12 +86,34 @@ Before using this repository, ensure you have the following dependencies install
    vvp hkspi.vvp
    ```
 
+### ERRORS
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/945663db-995d-4cdd-8e2c-eec57494879b" />
+
+<img width="1437" height="510" alt="image" src="https://github.com/user-attachments/assets/111fff90-792a-4074-90f3-f0ac008615c2" />
+
+<img width="1434" height="168" alt="image" src="https://github.com/user-attachments/assets/3a005ce8-d15c-414c-8c03-fe2958a9ad4d" />
+
+- On solving these, we get
+
+### SUCCESS
+
+<img width="1430" height="77" alt="image" src="https://github.com/user-attachments/assets/abbe6288-8733-4049-b1b2-cb42c039f738" />
+
+<img width="568" height="543" alt="image" src="https://github.com/user-attachments/assets/382932be-2326-4352-8adb-4ca59ff9c380" />
+
    - you should receive output similar to following output on successfull execution
 
 7. Visualize the Testbench waveforms for complete design using following command
    ```
    gtkwave hkspi.vcd hkspi_tb.v
    ```
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/ce36aa4a-d137-4d6f-a2a5-c22cce9d23da" />
+
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/81e8bf5d-f232-4d9f-aca0-7ce267251890" />
+
+
+
+
 
 
    ### Synthesis Setup
@@ -88,6 +125,13 @@ Before using this repository, ensure you have the following dependencies install
    SCL IO PATH
 
    ```
+
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/d83835d0-ae71-4649-bbea-d917d273c3cf" />
+
+
+
+
+   
 ### Running Synthesis
 9. open a terminal and cd to the work folder i.e. [./synthesis/work_folder](./synthesis/work_folder)
 10. Run synthesis using following command
