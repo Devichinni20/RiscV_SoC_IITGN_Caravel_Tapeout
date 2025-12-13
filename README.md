@@ -14,8 +14,16 @@
 
 <img width="1280" height="720" alt="main" src="https://github.com/user-attachments/assets/d4c8dff6-cfe9-4524-be8e-63fd8507e726" />
 
-</div>
 
+**Designs of Caravel.**
+
+<img width="383" height="630" alt="image" src="https://github.com/user-attachments/assets/f5113cf8-97e7-4690-9f81-652a516fb9b4" />
+
+<img width="323" height="615" alt="image" src="https://github.com/user-attachments/assets/1ecb73e1-9fd0-4f9b-8c5b-9f304d967256" />
+
+
+
+</div>
 ---
 
 ## 📘 Overview
