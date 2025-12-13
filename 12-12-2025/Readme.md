@@ -126,12 +126,6 @@ Before using this repository, ensure you have the following dependencies install
 
    ```
 
-<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/d83835d0-ae71-4649-bbea-d917d273c3cf" />
-
-
-
-
-   
 ### Running Synthesis
 9. open a terminal and cd to the work folder i.e. [./synthesis/work_folder](./synthesis/work_folder)
 10. Run synthesis using following command
@@ -141,11 +135,45 @@ check synth.tcl file
 ```
 dc_shell -f ../synth.tcl
 ```
-
-
 - Expected outputs:
   - Synthesized verilog: `vsdcaravel_synthesis.v` (in `synthesis/output/`)
   - Area/power/timing reports (in `synthesis/report/`)
+    
+### Log of Synthesis
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/d83835d0-ae71-4649-bbea-d917d273c3cf" />
+
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/49c7008a-b549-4fbd-b19f-6e957d423520" />
+
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/60b41f94-8954-4eca-991f-c1abca524668" />
+
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/c56a75fe-ac75-4216-891b-9771656a3c07" />
+
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/66766ad1-8483-45c6-85a0-0bfea9da8dd9" />
+
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/828881f3-8a1c-47a1-a0a8-172d2ff3fad5" />
+
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/6b22603d-a7e8-4d58-9ea3-555e0f1a43a8" />
+
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/5fea2274-bf48-48ec-a156-d1f6e35772bd" />
+
+### OUTPUT-vsdcaravel_synthesis.v
+
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/bccd23cf-4658-4720-a506-6720e8772cfe" />
+
+### REPORTS
+
+<img width="1600" height="987" alt="image" src="https://github.com/user-attachments/assets/e50ad92b-3913-452a-92ae-7a52820ba3d6" />
+
+<img width="1325" height="501" alt="image" src="https://github.com/user-attachments/assets/db7f0351-d961-40b4-9635-3b6bd0de4d59" />
+
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/325cee0b-2a72-457a-9033-12e622591ba3" />
+
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/56a9fb97-36a9-4d05-b4b2-f0b14a9c3295" />
+Resulted in slack of 0.
+
+
+
+
  
 
 ## 5. Gate-Level Simulation (GLS)
@@ -174,13 +202,63 @@ make
 vvp hkspi.vvp
 gtkwave hkspi.vcd hkspi_tb.v
 ```
+
+<img width="1600" height="225" alt="image" src="https://github.com/user-attachments/assets/b99c4482-e91b-4822-8734-518d088e7bb4" />
+
+### ERRORS
+
+<img width="1600" height="225" alt="image" src="https://github.com/user-attachments/assets/6683947c-4740-4577-b578-6be66af46b81" />
+
+
+
+### FIX
+
+There is an error in chip_io.v Because there are 2 files with the same name but different functionalities i.e pt3b02_wrapper.v
+
+
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/04e0012a-c0f2-46c9-b285-f5786082a2ab" />
+
+for this you need to change the file name of pt3b02_wrapper to pt3b02_wrapper1.v and explicitly include it in the chip_io.v code
+<img width="377" height="102" alt="image" src="https://github.com/user-attachments/assets/6c902af4-9837-4e0b-9c9b-d2f20e97dc5d" />
+
+
+
+ also make sure you change these lines from pt3b02_wrapper to  pt3b02_wrapper_0 and  pt3b02_wrapper_1 because the file we renamed and included explicitly contains these.
+<img width="1243" height="377" alt="image" src="https://github.com/user-attachments/assets/34519123-1e8e-46e5-acb9-b6555a2f446b" />
+then your rtl will pass without any issues
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/b57a8aaa-c97b-4796-959e-a99d7881e97a" />
+
+
+waveform visualisation
+<img width="1593" height="440" alt="image" src="https://github.com/user-attachments/assets/92b1ee65-5dd2-4885-9e91-3048b9869b60" />
+
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/53dd7b10-e529-4506-899c-2388d720ca1c" />
+
+
+
+---
+
+### OBSERVED SOME DESIGNS
+
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/23301724-bd5b-48d3-b09c-a2598c7bc64d" />
+
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/ee868efe-0bb6-43c4-b1e6-0b425b51d7f9" />
+
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/b0e7f7c5-79d5-402b-9bf3-cb36f421578d" />
+
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/73f53f13-982a-4364-975f-7b38f3d17daf" />
+
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/4eea1d33-fcb6-44ec-ad65-3f503b7d7ade" />
+
+
+
 18. Compare output from functional Simulation and GLS to verify the synthesis output
 
     
 ## Results
 - Successfully ran functional simulations, synthesis and GLS for VexRiscV Harnessed with Efabless's Caravel usign SCL180 PDK.
 
-## Reports
+## Post Synthesis Reports
 
 
 
