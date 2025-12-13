@@ -6,7 +6,7 @@
 ### 🔧 Day1 Summary  
 Understanding the Caravel housekeeping SPI, running end-to-end RTL simulations, and validating behavior at the gate-level.
 
----
+
 
 <details>
   <summary>
@@ -248,7 +248,7 @@ Everything else — I/O, clocking, memory, CPU, debug — is already done.
 </details>
 
 
-## LAB
+## LABS
 ## Prerequisites
 
 Open a GitHub Codespace (or Ubuntu terminal), ensure you have `git`, `iverilog`, and `python3` installed:
