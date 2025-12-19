@@ -1,0 +1,39 @@
+#@ # 
+#@ # Running icc2_shell Version U-2022.12-SP3 for linux64 -- Apr 18, 2023
+#@ # Date:   Fri Dec 19 19:31:34 2025
+#@ # Run by: cdmanasa@nanodc.iitgn.ac.in
+#@ 
+
+source -echo -verbose floorplan.tcl
+start_gui
+gui_set_pref_value -category {SelectByNamePalette} -key {ObjectType} -value {Logical Cells}
+win_set_filter -visible -class cell -filter {assembly_die_margin clock_margin hard_macro_margin hard_margin route_blockage_margin seal_ring_margin soft_margin}
+win_set_filter -visible -class pseudo_bump -filter {deleted}
+win_set_filter -visible -class pseudo_tsv -filter {deleted}
+win_set_filter -visible -class placement_blockage -filter {wiring} -layer {0-21}
+win_set_filter -expand_cell_types {soft_macro  }
+win_set_select_class -visible {cell port bound routing_blockage shaping_blockage pg_region bump_region pseudo_bump pseudo_tsv pin_blockage block_shielding topology_node topology_edge topology_repeater annotation_shape core_area die_area edit_group shape via terminal fill_cell placement_blockage }
+win_set_filter -class cell -filter {array assembly_die_margin clock_margin hard_macro_margin hard_margin route_blockage_margin seal_ring_margin soft_margin}
+win_set_filter -class pseudo_bump -filter {deleted}
+win_set_filter -class pseudo_tsv -filter {deleted}
+win_set_filter -class placement_blockage -filter {wiring} -layer {0-21}
+win_set_select_class {cell port bound routing_blockage shaping_blockage pg_region bump_region pseudo_bump pseudo_tsv pin_blockage topology_node topology_edge topology_repeater annotation_shape edit_group shape via placement_blockage }
+get_ports
+place_pins -self
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {3604.2250 2587.4800}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {3591.3750 2586.2200}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {3589.7350 2586.2200}
+gui_zoom -window [gui_get_current_window -view] -factor 2.93464
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {3436.8500 2586.7150}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {3436.8500 2586.7150}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {3436.3100 2586.1750}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {3435.2300 2585.0950}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {3435.2300 2585.0950}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {3435.2300 2585.0950}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {3435.2300 2585.0950}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {3435.2300 2585.0950}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {3435.2300 2585.0950}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {3433.0700 2593.7400}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {3433.0700 2593.7400}
+win_select_objects -slct_targets global -at {3597.3700 2861.8150} -radius 8.64753
+change_selection 
