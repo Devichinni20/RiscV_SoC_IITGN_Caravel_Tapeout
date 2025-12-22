@@ -145,8 +145,11 @@ make compile
 make simv
 ```
 <img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/f9741d04-1eff-4915-ac8c-c7be24184f93" />
+### waveform
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/292408f7-06b2-41f8-a4ec-2c762a6c3a5e" />
 
 ### Synthesis
+<img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/4314ab5f-32a8-401c-84d5-b558580c9606" />
 
 <img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/69bd34a3-10a6-445b-a374-3ebbaa57c641" />
 <img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/941890da-f891-4abf-bb51-e58f790ae894" />
