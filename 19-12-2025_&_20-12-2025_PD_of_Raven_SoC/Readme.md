@@ -1,5 +1,9 @@
 #  Raven SoC PD - RTL to GDSII flow using Synopsys Tools
-
+Reference Scripts
+Use the following ICC2 standalone flow scripts as a learning reference:
+```
+https://github.com/kunalg123/icc2_workshop_collaterals/blob/master/standaloneFlow/top.tcl
+```
 ---
 
 ## Design Specifications
@@ -13,6 +17,19 @@
 | **Technology** | Nangate 45nm |
 
 ---
+Tools: Synopsys ICC2, Star-RC, PrimeTime
+Scope: Placement → Routing → Extraction → STA (Flow Validation Task)
+## Performance Target
+•	Target Frequency: 100 MHz
+•	Clock Period: 10 ns
+Timing must be checked using post-route parasitics (SPEF).
+## Flow to Be Implemented
+Sequence:
+ICC2 (Placement + Routing)
+   ↓
+Star-RC (SPEF Extraction)
+   ↓
+PrimeTime (Post-Route STA @ 100MHz)
 
 ### 1. Floorplanning Using ICC2 
 
