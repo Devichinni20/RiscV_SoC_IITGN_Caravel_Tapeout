@@ -1,0 +1,7 @@
+*.log text eol=lf
+*.rpt text eol=lf
+*.out text eol=lf
+*.tcl text eol=lf
+*.sh  text eol=lf
+*.v   text eol=lf
+*.sv  text eol=lf
