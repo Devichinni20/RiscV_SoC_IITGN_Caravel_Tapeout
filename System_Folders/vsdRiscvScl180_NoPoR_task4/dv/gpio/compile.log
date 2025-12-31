@@ -1,0 +1,246 @@
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_all' will be deprecated in a future release.  Please use 
+  '-debug_acc+all+dmptf -debug_region+cell+encrypt' instead.
+
+Command: vcs -sverilog +v2k -full64 -debug_all -lca -timescale=1ns/1ps +define+FUNCTIONAL \
++define+SIM +incdir+../ +incdir+../..//rtl +incdir+~/gits/caravel_pico +incdir+../..//rtl/scl180_wrapper \
++incdir+/home/Synopsys/pdk/SCL_PDK_3/SCLPDK_V3.0_KIT/scl180/iopad/cio250/4M1L/verilog/tsl18cio250/zero \
+/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/defines.v /home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/user_defines.v \
+/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_clocking.v /home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_core.v \
+/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/mprj_io_buffer.v gpio_tb.v -l compile.log \
+-o simv
+                         Chronologic VCS (TM)
+         Version U-2023.03_Full64 -- Fri Dec 19 18:45:08 2025
+
+                    Copyright (c) 1991 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS Release Notes
+
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_all' will be deprecated in a future release.  Please use 
+  '-debug_acc+all -debug_region+cell+encrypt' instead.
+
+Parsing design file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/defines.v'
+Parsing design file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/user_defines.v'
+Parsing design file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_clocking.v'
+Parsing design file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_core.v'
+Parsing included file '../..//rtl/mprj_io_buffer.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_core.v'.
+Parsing included file '../..//rtl/manual_power_connections.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_core.v'.
+Parsing included file '../..//rtl/empty_macro.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_core.v'.
+Parsing design file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/mprj_io_buffer.v'
+
+Error-[MPD] Module previously declared
+  The module was previously declared at: 
+  "../..//rtl/mprj_io_buffer.v", 16
+  It is redeclared later at:
+  "/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/mprj_io_buffer.v", 16: token is 
+  'mprj_io_buffer'
+  module mprj_io_buffer (
+                       ^
+  Please remove one of the declarations and compile again.
+
+Parsing design file 'gpio_tb.v'
+Parsing included file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/__uprj_netlists.v'.
+Parsing included file '../..//rtl/defines.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/__uprj_netlists.v'.
+Parsing included file '../..//rtl/__user_project_wrapper.v'.
+Parsing included file '../..//rtl/defines.v'.
+Back to file '../..//rtl/__user_project_wrapper.v'.
+Parsing included file '../..//rtl/debug_regs.v'.
+Back to file '../..//rtl/__user_project_wrapper.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/__uprj_netlists.v'.
+Back to file 'gpio_tb.v'.
+Parsing included file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/defines.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/user_defines.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/pads.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/scl180_wrapper/pc3b03ed_wrapper.v'.
+Parsing included file '/home/Synopsys/pdk/SCL_PDK_3/SCLPDK_V3.0_KIT/scl180/iopad/cio250/4M1L/verilog/tsl18cio250/zero/pc3b03ed.v'.
+Back to file '../..//rtl/scl180_wrapper/pc3b03ed_wrapper.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '/home/Synopsys/pdk/SCL_PDK_3/SCLPDK_V3.0_KIT/scl180/iopad/cio250/4M1L/verilog/tsl18cio250/zero/pc3d21.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/scl180_wrapper/pc3d01_wrapper.v'.
+Parsing included file '/home/Synopsys/pdk/SCL_PDK_3/SCLPDK_V3.0_KIT/scl180/iopad/cio250/4M1L/verilog/tsl18cio250/zero/pc3d01.v'.
+Back to file '../..//rtl/scl180_wrapper/pc3d01_wrapper.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/pt3b02_wrapper.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/digital_pll.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/digital_pll_controller.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/ring_osc2x13.v'.
+Parsing included file '/home/Synopsys/pdk/SCL_PDK_3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/verilog/vcs_sim_model/tsl18fs120_scl.v'.
+Back to file '../..//rtl/ring_osc2x13.v'.
+Parsing included file '../..//rtl/dummy_scl180_conb_1.v'.
+Back to file '../..//rtl/ring_osc2x13.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/caravel_clocking.v'.
+
+Error-[MPD] Module previously declared
+  The module was previously declared at: 
+  "/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_clocking.v", 19
+  It is redeclared later at:
+  "../..//rtl/caravel_clocking.v", 19: token is 'caravel_clocking'
+  module caravel_clocking(
+                         ^
+  Please remove one of the declarations and compile again.
+
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/user_id_programming.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/clock_div.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/mprj_io.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/chip_io.v'.
+Parsing included file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/scl180_wrapper/pt3b02_wrapper.v'.
+Parsing included file '/home/Synopsys/pdk/SCL_PDK_3/SCLPDK_V3.0_KIT/scl180/iopad/cio250/4M1L/verilog/tsl18cio250/zero/pt3b02.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/scl180_wrapper/pt3b02_wrapper.v'.
+Back to file '../..//rtl/chip_io.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/housekeeping_spi.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/housekeeping.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/mprj_logic_high.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/mprj2_logic_high.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/mgmt_protect.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/mgmt_protect_hv.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/constant_block.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/gpio_control_block.v'.
+Parsing included file '../..//rtl/scl180_macro_sparecell.v'.
+Back to file '../..//rtl/gpio_control_block.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/gpio_defaults_block.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/gpio_signal_buffering.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/gpio_logic_high.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/xres_buf.v'.
+
+Warning-[EPIMD] Empty Port in Module Declaration
+../..//rtl/xres_buf.v, 30
+  There is empty port specified in module declaration.
+  
+
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/spare_logic_block.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/mgmt_core_wrapper.v'.
+Parsing included file '../..//rtl/mgmt_core.v'.
+Parsing included file '../..//rtl/RAM256.v'.
+Back to file '../..//rtl/mgmt_core.v'.
+Parsing included file '../..//rtl/RAM128.v'.
+Back to file '../..//rtl/mgmt_core.v'.
+Parsing included file '../..//rtl/VexRiscv_MinDebugCache.v'.
+Back to file '../..//rtl/mgmt_core.v'.
+Back to file '../..//rtl/mgmt_core_wrapper.v'.
+
+Warning-[CIWC] Ignored /* within /* */ comment
+../..//rtl/mgmt_core_wrapper.v, 40
+  Nested comments is found. Ignoring nested '/*'. 
+  /* 1.8V domain */
+  ^
+
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Parsing included file '../..//rtl/vsdcaravel.v'.
+Parsing included file '../..//rtl/copyright_block.v'.
+Back to file '../..//rtl/vsdcaravel.v'.
+Parsing included file '../..//rtl/caravel_logo.v'.
+Back to file '../..//rtl/vsdcaravel.v'.
+Parsing included file '../..//rtl/caravel_motto.v'.
+Back to file '../..//rtl/vsdcaravel.v'.
+Parsing included file '../..//rtl/open_source.v'.
+Back to file '../..//rtl/vsdcaravel.v'.
+Parsing included file '../..//rtl/user_id_textblock.v'.
+Back to file '../..//rtl/vsdcaravel.v'.
+Parsing included file '../..//rtl/caravel_core.v'.
+Parsing included file '../..//rtl/mprj_io_buffer.v'.
+
+Error-[MPD] Module previously declared
+  The module was previously declared at: 
+  "../..//rtl/mprj_io_buffer.v", 16
+  It is redeclared later at:
+  "../..//rtl/mprj_io_buffer.v", 16: token is 'mprj_io_buffer'
+  module mprj_io_buffer (
+                       ^
+  Please remove one of the declarations and compile again.
+
+Back to file '../..//rtl/caravel_core.v'.
+Parsing included file '../..//rtl/manual_power_connections.v'.
+
+Error-[MPD] Module previously declared
+  The module was previously declared at: 
+  "../..//rtl/manual_power_connections.v", 1
+  It is redeclared later at:
+  "../..//rtl/manual_power_connections.v", 1: token is 
+  'manual_power_connections'
+  module manual_power_connections ();
+                                 ^
+  Please remove one of the declarations and compile again.
+
+Back to file '../..//rtl/caravel_core.v'.
+Parsing included file '../..//rtl/empty_macro.v'.
+
+Error-[MPD] Module previously declared
+  The module was previously declared at: 
+  "../..//rtl/empty_macro.v", 1
+  It is redeclared later at:
+  "../..//rtl/empty_macro.v", 1: token is 'empty_macro'
+  module empty_macro ();
+                    ^
+  Please remove one of the declarations and compile again.
+
+Back to file '../..//rtl/caravel_core.v'.
+
+Error-[MPD] Module previously declared
+  The module was previously declared at: 
+  "/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_core.v", 39
+  It is redeclared later at:
+  "../..//rtl/caravel_core.v", 39: token is 'caravel_core'
+  module caravel_core (
+                     ^
+  Please remove one of the declarations and compile again.
+
+Back to file '../..//rtl/vsdcaravel.v'.
+Back to file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/caravel_netlists.v'.
+Back to file 'gpio_tb.v'.
+Parsing included file '/home/cdmanasa/vsdRiscvScl180_NoPoR/rtl/spiflash.v'.
+Back to file 'gpio_tb.v'.
+4 warnings
+6 errors
+CPU time: .195 seconds to compile

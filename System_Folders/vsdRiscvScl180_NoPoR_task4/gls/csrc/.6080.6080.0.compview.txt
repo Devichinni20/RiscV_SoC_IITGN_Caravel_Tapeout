@@ -1,0 +1,5 @@
+{"comelab":{"timestamp_begin":1765879496.201607750, "rt":0.02, "ut":0.01, "st":0.00}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1765879495.988383976}
+{"VCS_COMP_START_TIME": 1765879495.988383976}
+{"VCS_COMP_END_TIME": 1765879496.259297569}
+{"VCS_USER_OPTIONS": "-full64 -debug_access+all -v ts18fs120_scl_ff.v vsdcaravel_synthesis.v tb.v"}
