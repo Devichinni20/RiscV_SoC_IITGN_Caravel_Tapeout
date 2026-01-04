@@ -569,9 +569,13 @@ compile_pg -strategies {strategy_m9m10}
 
 **Detailed Power Ring and Mesh:** High-level view showing power rings around the core perimeter and internal stripe distribution pattern for complete coverage.
 <img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/963bb08d-34f1-46bb-b728-fd503ade6489" />
+
 ## Before
+
 <img width="755" height="463" alt="image" src="https://github.com/user-attachments/assets/9ddcdf7b-03c1-4443-a18b-d423279ac8a2" />
+
 ## After
+
 <img width="879" height="754" alt="image" src="https://github.com/user-attachments/assets/3cfdc598-211c-4302-ad3e-71e62d85d6ea" />
 <img width="667" height="507" alt="image" src="https://github.com/user-attachments/assets/5b320209-436c-4285-bd55-7cdb97b1b663" />
 <img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/e24dae1d-6b5c-4307-b5a5-0eec14bb8605" />
@@ -717,10 +721,14 @@ Congestion prediction tools estimate routing demand across different regions, id
 
 The placement process generates logs showing cell placement statistics, optimization iterations, quality of results metrics, and convergence information.
 <img width="1237" height="693" alt="image" src="https://github.com/user-attachments/assets/811dec34-480b-4c87-8603-2dc65525d9ec" />
+
 ## Before
+
 <img width="1511" height="688" alt="image" src="https://github.com/user-attachments/assets/6650fb36-3fe8-4611-b7cc-c2998591848f" />
 <img width="941" height="510" alt="image" src="https://github.com/user-attachments/assets/192e8665-fc7d-4bc9-b8ef-83c891944980" />
+
 ## After
+
 <img width="887" height="749" alt="image" src="https://github.com/user-attachments/assets/7e4147bd-4fb7-43a9-a98d-d4ad36025991" />
 <img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/cd0d55ef-ec79-44b5-a8e8-c161eab795bc" />
 
@@ -1858,3 +1866,4 @@ The modular architecture, with clean handoffs between ICC2, Star-RC, and PrimeTi
 While signoff-grade optimization has not been pursued, the design demonstrates end-to-end flow correctness and validates tool integration.
 
 ---
+
